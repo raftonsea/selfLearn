@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.demo.demoInsert">
+
+
+
+    <insert id="doSave2Village" parameterType="java.util.Map">
+        insert into t1
+        (
+        ID,
+        c1,c2,c3,c4,c5
+        )
+        values
+        (
+        #{ID,jdbcType=VARCHAR},
+        #{c1,jdbcType=VARCHAR} ,
+        #{c2,jdbcType=VARCHAR},
+        #{c3,jdbcType=INTEGER},
+        #{c4,jdbcType=VARCHAR},
+        #{c5,jdbcType=VARCHAR}
+        )
+    </insert>
+
+
+</mapper>
